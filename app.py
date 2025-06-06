@@ -2,7 +2,11 @@ import streamlit as st
 from analyzer import analyze_vod
 import tempfile
 import pandas as pd
+import os
+import sys
 
+# Fix potentiel pour certains chemins mal gérés
+os.environ["PYTHONPATH"] = ""
 st.set_page_config(page_title="VOD Analyzer", layout="wide")
 st.title("🎥 Analyseur de VOD : détection automatique des meilleurs moments")
 
