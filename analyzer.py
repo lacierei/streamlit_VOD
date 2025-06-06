@@ -6,7 +6,8 @@ import os
 from pyAudioAnalysis import audioBasicIO
 from scenedetect import VideoManager, SceneManager
 from scenedetect.detectors import ContentDetector
-
+# Fix potentiel pour certains chemins mal gérés
+os.environ["PYTHONPATH"] = ""
 def transcribe_video(video_path):
     model = whisper.load_model("base")
     result = model.transcribe(video_path)
