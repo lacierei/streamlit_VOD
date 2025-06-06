@@ -1,0 +1,9 @@
+streamlit
+openai-whisper
+ffmpeg-python
+moviepy
+scenedetect
+pyAudioAnalysis
+numpy
+pandas
+matplotlib
